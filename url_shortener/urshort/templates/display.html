@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block start %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sr. No.</th>
+        <th scope="col">Original url</th>
+        <th scope="col">Short Url</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        {% for url in url %}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{url.long_url}}</td>
+        <td>{{url.short_code}}</td>
+        
+      </tr>
+     {% endfor %}
+    </tbody>
+  </table>
+    {% endblock  %}

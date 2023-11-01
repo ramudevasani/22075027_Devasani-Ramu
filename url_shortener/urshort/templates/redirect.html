@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block start %}
+<center>
+    <h4>URL:({{obj.long_url}})</h2>
+   <a href="{{obj.long_url}}" target="blank"> <h6>SHORT URL:{{obj.short_code}}</h2></a>
+    {% comment %} <a href="{{obj.long_url}}" ><button class="btn btn-outline-success">GO TO WEBSITE</button></a> {% endcomment %}
+</center>
+{% endblock start %}
